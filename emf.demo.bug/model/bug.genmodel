@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/emf.demo.bug/src-gen" creationIcons="false" editDirectory="/emf.demo.bug.edit/src-gen"
+    editorDirectory="/emf.demo.bug.editor/src-gen" modelPluginID="emf.demo.bug" modelName="Bug"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>bug.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Bug" basePackage="emf.demo" disposableProviderFactory="true"
+      ecorePackage="bug.ecore#/">
+    <genClasses ecoreClass="bug.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bug.ecore#//Model/packages"/>
+    </genClasses>
+    <genClasses ecoreClass="bug.ecore#//Package">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bug.ecore#//Package/packages"/>
+    </genClasses>
+    <genClasses ecoreClass="bug.ecore#//Component">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bug.ecore#//Component/children"/>
+    </genClasses>
+    <genClasses ecoreClass="bug.ecore#//IconChangeableInterface">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bug.ecore#//IconChangeableInterface/iconPath"/>
+    </genClasses>
+    <genClasses ecoreClass="bug.ecore#//ComponentProxy">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference bug.ecore#//ComponentProxy/type"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="bug.ecore#//NameableInterface">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bug.ecore#//NameableInterface/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="bug.ecore#//ElementContainarable">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bug.ecore#//ElementContainarable/elements"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

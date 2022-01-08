@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated bug -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="emf.demo.bug.presentation.BugModelWizardID"
+            name="%_UI_BugModelWizard_label"
+            class="emf.demo.bug.presentation.BugModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/BugModelFile.gif">
+         <description>%_UI_BugModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated bug -->
+      <editor
+            id="emf.demo.bug.presentation.BugEditorID"
+            name="%_UI_BugEditor_label"
+            icon="icons/full/obj16/BugModelFile.gif"
+            extensions="bug"
+            class="emf.demo.bug.presentation.BugEditor"
+            contributorClass="emf.demo.bug.presentation.BugActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
